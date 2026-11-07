@@ -1,0 +1,5 @@
+DROP TABLE IF EXISTS attendance;
+DROP TABLE IF EXISTS users;
+CREATE TABLE users (id INT AUTO_INCREMENT PRIMARY KEY, username VARCHAR(50) UNIQUE, password VARCHAR(100));
+INSERT INTO users VALUES (1,'admin','admin123');
+CREATE TABLE attendance (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(100), stud_id VARCHAR(30), course VARCHAR(50), date DATE, status VARCHAR(20), time_in TIME, created_by VARCHAR(50));
